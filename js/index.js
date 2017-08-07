@@ -131,12 +131,12 @@ getId('index').onclick = function()
 		getId('content').style.display = 'block';
 		getId('shop-content').style.display = 'none';
 		getId('bg2').style.height='200px';
-		getId('bg1').style.height='640px';
+		getId('bg1').style.height='1000px';
 	} else if(getId('content').style.display=='none'&& oBefore.style.display == 'block'){
 		getId('content').style.display = 'block';
 		getId('shop-content').style.display = 'none';
 		getId('bg2').style.height='200px';
-		getId('bg1').style.height='640px';
+		getId('bg1').style.height='1000px';
 	};
 }
 getId('shoplist').onclick = function()

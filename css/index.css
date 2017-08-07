@@ -15,7 +15,7 @@
 	textarea{resize:none; overflow:auto;}
 	header,article,footer{padding: 0;margin: 0;}
 /*主页*/
-.background{width:1300;height:640px;margin: 0 auto;background: #3a3515 url(../img/1.jpg) no-repeat center top;background-size: 1300px;position: relative;z-index: 1;}
+.background{width:1300;height:1000px;margin: 0 auto;background: #3a3515 url(../img/1.jpg) no-repeat center top;background-size: 1300px;position: relative;z-index: 1;}
 .background2{width:100%;height:200px;background:rgba(58,53,21,0.4);position: relative;top:0;z-index: 2;}
 .head{position: relative;z-index: 3;height: 90px;padding-left: 55px;padding-top: 20px;}
 .headtitle{height:90px;width:370px;background:url(../img/标题.png) no-repeat;}
@@ -63,7 +63,7 @@
 .tit li{height: 45px;width: 218px;border: solid #FFFFFF;border-width: 1px 2px 0 0;float: left;background:rgba(232,232,232,0.8);text-align: center;font:bold 16px/45px "微软雅黑";}
 .tit li.active{background:#000;color:#fff;}
 /*商店页面*/
-.shop-content{position: relative;z-index: 3;height: 820px;}
+.shop-content{position: relative;z-index: 3;height: 1000px;background: #3a3515;}
 .shop-allcontent{height: 820px;width: 1200px;margin: 0 auto;}
 .shoplist{height:780px;width:940px;float:left;padding: 10px;background: #ededed;}
 .location{height:20px;width:500px;color: #333333;font: 14px/20px "微软雅黑";}
