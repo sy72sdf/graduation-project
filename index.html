@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>index</title>
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+		<script src="js/index.js"></script><!--主要方法-->
+        <script src="js/jq.js"></script><!--补充封装方法-->
+	</head>
+	<body>
+		<div class="background" id="bg1">
+			<div class="background2" id="bg2">
+				<div class="head">
+					<div class="headtitle"></div>
+				</div>
+				<div class="navframe">
+				<div class="nav" >
+					<ul id="nav">
+						<li><a href="##" target="_self" id="index">首页</a></li>
+						<li><a href="##" target="_self" id="shoplist">商品列表</a></li>
+						<li><a href="##" target="_self">敬请期待</a></li>
+						<li><a href="##" target="_self">敬请期待</a></li>
+						<li><a href="##" target="_self">敬请期待</a></li>
+						<li><a href="##" target="_self">敬请期待</a></li>
+						<li><a href="##" target="_self">敬请期待</a></li>
+					</ul>
+				</div>
+				</div>
+				<div class="content" id="content">
+					<div class="allcontent">
+						<div class="contentleft">
+							<h3 id="h3"><img src="img/7.jpg"> 账号登录</h3>
+							<div class="login" id="beforelog"><!--登录前-->
+								<form >
+									<input type="text" placeholder="账号" class="txt" id="count"><br />
+									<input type="password" placeholder="密码" class="txt" id="password"><br />
+									<input type="button" value="登录" class="bt" id="login">
+									<input type="reset" value="重置" class="bt">
+								</form>
+								<p><a href="##">点击注册</a>&nbsp;<a href="##">忘记密码</a></p>
+							</div><!--登录前-->
+							<div class="afterlogin" id="afterlog"  style="display: none;"><!--登录后-->
+								<p>欢迎回来！songyifei</p><a href="javascript:;" id="quit1">退出账号</a>
+								<div class="role"></div>
+								<span>等级：100</span> <span id="yourmoney1">余额：100000</span>
+							</div><!--登录后-->
+							<h3><img src="img/7.jpg"> 公告</h3><span class="more"><a href="javascript:;">更多></a></span>
+							<ul class="ulborder">
+								<li><a href="##">新版道具商城上线了！</a><span>04/21</span></li>
+								<li><a href="##">新版道具商城上线了！</a><span>04/21</span></li>
+								<li><a href="##">新版道具商城上线了！</a><span>04/21</span></li>
+								<li><a href="##">新版道具商城上线了！</a><span>04/21</span></li>
+							</ul>
+						</div>
+						<div class="contentright">
+							<div class="weixin">
+								<div><img src="img/二维码1.jpg"></div>
+								<p>关注微信，惊喜不断！</p>
+							</div>
+							<div class="weibo">
+								<div><img src="img/二维码1.jpg"></div>
+								<p>关注微博，奖品丰富！</p>
+							</div>
+						</div>
+						<div class="contentcenter" id="imglogo">
+							<div class="imglogo">
+								<ul id="ul">
+									<li><a href="##"><img src="img/2.jpg"></a><p class="onlogo">新版道具商城上线了,快来关注！</p></li>
+									<li><a href="##"><img src="img/4.jpg"></a><p class="onlogo">新版道具商城上线了,快来关注！</p></li>
+									<li><a href="##"><img src="img/5.jpg"></a><p class="onlogo">新版道具商城上线了,快来关注！</p></li>
+                                    <li><a href="##"><img src="img/2.jpg"></a><p class="onlogo">新版道具商城上线了,快来关注！</p></li>
+								</ul>
+							</div>
+							<div class="tit">
+								<ul id="oBtn">
+									<li>新版道具商城上线了！</li>
+									<li>新版道具商城上线了！</li>
+									<li>新版道具商城上线了！</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="shop-content" id="shop-content" style="display: none;">
+					<div class="shop-allcontent">
+						<div class="contentleft">
+							<div class="afterlogin"><!--登录后-->
+								<p>欢迎回来！songyifei</p><a href="##" id="quit2">退出账号</a>
+								<div class="role"></div>
+								<span>等级：100</span> <span id="yourmoney2">余额：100000</span>
+							</div><!--登录后-->
+							<h3><img src="img/7.jpg"> 公告</h3><span class="more"><a href="javascript:;">更多></a></span>
+							<ul class="ulborder">
+								<li><a href="##">新版道具商城上线了！</a><span>04/21</span></li>
+								<li><a href="##">新版道具商城上线了！</a><span>04/21</span></li>
+								<li><a href="##">新版道具商城上线了！</a><span>04/21</span></li>
+								<li><a href="##">新版道具商城上线了！</a><span>04/21</span></li>
+							</ul>
+						</div>
+						<div class="shoplist">
+							<p class="location">您现在的位置：<a href="##">道具商城</a> > 商品列表</p>
+							<div class="tag" id="tag"><span style="background: #35AB88;color: #FFFFFF;">战斗物品</span><span>消耗物品</span><span>稀有物品</span></div>
+							<div class="itemsframe">
+								<ul class="items" id="items">
+									<li>
+										<dl id="dl1">
+											<!--<dd>
+												<div class="pic"><img src="img/sucai/PASBTNBash.jpg"></div>
+												<div class="name">雷霆之锤</div>
+												<div class="price">价格：100金币</div>
+												<div class="buy"><a href="javascript:;">点击购买</a></div>
+											</dd>-->
+										</dl>
+										<p>更多道具即将上架，敬请期待！</p>
+									</li>
+									<li>
+										<dl id="dl2">
+										</dl>
+										<p>更多道具即将上架，敬请期待！</p>
+									</li>
+									<li>
+										<dl id="dl3">
+										</dl>
+										<p>更多道具即将上架，敬请期待！</p>
+									</li>
+								</ul>
+								<div class="buyfixed" id="buyfixed"><!--购买窗口-->
+									<strong id="closeby">×</strong>
+									<p id="by1price"></p>
+									<p id="amount">库存：</p>
+									<div><img src="img/减号.png" id="jian"><span id="shuliang">数量：10</span><img src="img/加号.png" id="jia"></div>
+									<em id="allprice">总价:</em>
+									<a href="##" id="getit">确认购买</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
