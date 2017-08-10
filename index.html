@@ -16,8 +16,8 @@
 				<div class="navframe">
 				<div class="nav" >
 					<ul id="nav">
-						<li><a href="##" target="_self" id="index">首页</a></li>
-						<li><a href="##" target="_self" id="shoplist">商品列表</a></li>
+						<a href="##" target="_self" id="index"><li>首页</li></a>
+						<a href="##" target="_self" id="shoplist"><li>商品列表</li></a>
 						<li><a href="##" target="_self">敬请期待</a></li>
 						<li><a href="##" target="_self">敬请期待</a></li>
 						<li><a href="##" target="_self">敬请期待</a></li>
@@ -84,8 +84,18 @@
 				<div class="shop-content" id="shop-content" style="display: none;">
 					<div class="shop-allcontent">
 						<div class="contentleft">
-							<div class="afterlogin"><!--登录后-->
-								<p>欢迎回来！songyifei</p><a href="##" id="quit2">退出账号</a>
+							<h3 id="h3-2"><img src="img/7.jpg"> 账号登录</h3>
+							<div class="login" id="beforelog-2"><!--登录前-->
+								<form >
+									<input type="text" placeholder="账号" class="txt" id="count-2"><br />
+									<input type="password" placeholder="密码" class="txt" id="password-2"><br />
+									<input type="button" value="登录" class="bt" id="login-2">
+									<input type="reset" value="重置" class="bt">
+								</form>
+								<p><a href="##">点击注册</a>&nbsp;<a href="##">忘记密码</a></p>
+							</div><!--登录前-->
+							 <div class="afterlogin" id="afterlog-2"  style="display: none;"><!--登录后-->
+								<p>欢迎回来！songyifei</p><a href="javascript:;" id="quit1-2">退出账号</a>
 								<div class="role"></div>
 								<span>等级：100</span> <span id="yourmoney2">余额：100000</span>
 							</div><!--登录后-->

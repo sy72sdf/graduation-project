@@ -29,7 +29,7 @@
 .contentleft{height: 355px;width: 205px;float: left;margin-right: 14px;background: #FFFFFF;padding: 10px;box-shadow: -5px -5px 3px #000000;}
 .contentleft h3{display:inline-block;heigth:30px;width:170px;font:bold 20px/30px "微软雅黑";color:#404040;}
 .contentleft h3 img{height: 30px;}
-#quit2,#quit1{display:inline-block;font:12px "微软雅黑";color:#CCC;margin-left:150px;}
+#quit1-2,#quit1{display:inline-block;font:12px "微软雅黑";color:#CCC;margin-left:150px;}
 .login{height:160px;width:205px;}
 .login p{height:20px;width:205px;font: 12px "微软雅黑";text-align: right;margin-top: 10px;}
 .login p a{color:#A09EA3;}

@@ -33,7 +33,7 @@ window.onload = function()
 		{
 			var aCount = oCount.value;
 			var aPassword = oPassword.value;
-	
+			console.log(123)
 			if (aCount == ''|| aPassword =='') 
 			{
 				alert('请输入账号密码');
@@ -44,6 +44,9 @@ window.onload = function()
 				oBefore.style.display = 'none';
 				oH3.style.display = 'none';
 				oAfter.style.display = 'block';
+				getId('beforelog-2').style.display = 'none';
+				getId('h3-2').style.display = 'none';
+				getId('afterlog-2').style.display = 'block';
 				return false
 			}
 			else
@@ -57,6 +60,43 @@ window.onload = function()
 			oBefore.style.display = 'block';
 			oH3.style.display = 'block';
 			oAfter.style.display = 'none';
+			getId('beforelog-2').style.display = 'block';
+			getId('h3-2').style.display = 'block';
+			getId('afterlog-2').style.display = 'none';
+		}
+		getId('login-2').onclick = function(){
+			var aCount = getId('count-2').value;
+			var aPassword =  getId('password-2').value;
+			console.log(456)
+			if (aCount == ''|| aPassword =='') 
+			{
+				alert('请输入账号密码');
+				return false
+			}
+			if (aCount == userData[0]["userName"] && aPassword == userData[0]["passWord"]) 
+			{
+				oBefore.style.display = 'none';
+				oH3.style.display = 'none';
+				oAfter.style.display = 'block';
+				getId('beforelog-2').style.display = 'none';
+				getId('h3-2').style.display = 'none';
+				getId('afterlog-2').style.display = 'block';
+				return false
+			}
+			else
+			{
+				alert('账号密码错误');
+				return false
+			};
+		}
+		getId('quit1-2').onclick = function()
+		{
+			oBefore.style.display = 'block';
+			oH3.style.display = 'block';
+			oAfter.style.display = 'none';
+			getId('beforelog-2').style.display = 'block';
+			getId('h3-2').style.display = 'block';
+			getId('afterlog-2').style.display = 'none';
 		}
 /////////////////////////////////////////////////////////轮播图
 var oBtn = document.getElementById('oBtn');
@@ -127,30 +167,30 @@ var oBefore2 = document.getElementById('beforelog2');
 var oAfter2 = document.getElementById('afterlog2');
 getId('index').onclick = function()
 {
-	if (getId('content').style.display=='none'&& oBefore.style.display == 'none') {
+	// if (getId('content').style.display=='none'&& oBefore.style.display == 'none') {
 		getId('content').style.display = 'block';
 		getId('shop-content').style.display = 'none';
 		getId('bg2').style.height='200px';
 		getId('bg1').style.height='1000px';
-	} else if(getId('content').style.display=='none'&& oBefore.style.display == 'block'){
-		getId('content').style.display = 'block';
-		getId('shop-content').style.display = 'none';
-		getId('bg2').style.height='200px';
-		getId('bg1').style.height='1000px';
-	};
+	// } else if(getId('content').style.display=='none'&& oBefore.style.display == 'block'){
+	// 	getId('content').style.display = 'block';
+	// 	getId('shop-content').style.display = 'none';
+	// 	getId('bg2').style.height='200px';
+	// 	getId('bg1').style.height='1000px';
+	// };
 }
 getId('shoplist').onclick = function()
 {
-	if (getId('shop-content').style.display=='none' &&oBefore.style.display == 'none') {
+	// if (getId('shop-content').style.display=='none' &&oBefore.style.display == 'none') {
 		getId('content').style.display = 'none';
 		getId('shop-content').style.display = 'block';
 		getId('bg2').style.height='1020px';
 		getId('bg1').style.height='1020px';
-	} 
-	else{
-		alert('请先登录');
-		return
-	};
+	// }; 
+	// else{
+	// 	alert('请先登录');
+	// 	return
+	// };
 }
 /////////////////////////////////////////////////////////道具列表页面切换
 //var oTag = document.getElementById('tag');
@@ -313,7 +353,10 @@ oJian.onclick = function()//数量减
 oGet.onclick = function()
 {
 	//console.log(oShuliang.innerHTML);console.log(oAllprice.innerHTML);
-	if (parseFloat(oMoney2.innerHTML.substring(3))>=parseFloat(oAllprice.innerHTML.substring(3))&&parseFloat(oShuliang.innerHTML.substring(3))<=parseFloat(oAmount.innerHTML.substring(3))&&parseFloat(oShuliang.innerHTML.substring(3))!=0) {
+	if (getId('afterlog-2').style.display == 'none') {
+		alert('请先登录');
+	}else{
+		if (parseFloat(oMoney2.innerHTML.substring(3))>=parseFloat(oAllprice.innerHTML.substring(3))&&parseFloat(oShuliang.innerHTML.substring(3))<=parseFloat(oAmount.innerHTML.substring(3))&&parseFloat(oShuliang.innerHTML.substring(3))!=0) {
 		alert('购买成功！');
 		oAmount.innerHTML ='库存：'+ (parseFloat(oAmount.innerHTML.substring(3))-parseFloat(oShuliang.innerHTML.substring(3)));
 		oMoney2.innerHTML = '余额:'+ (parseFloat(oMoney2.innerHTML.substring(3))-parseFloat(oAllprice.innerHTML.substring(3)))//购买页余额
@@ -327,6 +370,8 @@ oGet.onclick = function()
 	}else if(parseFloat(oMoney2.innerHTML.substring(3))<parseFloat(oAllprice.innerHTML.substring(3))){
 		alert('余额不足！')
 		return
+		};
 	};
+	
 };
 };
